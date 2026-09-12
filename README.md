@@ -17,7 +17,7 @@ Publishing behavior:
 
 Prerequisite: GitHub Pages must be configured to deploy from **GitHub Actions** in repository settings.
 
-1. When HTML files (or the deployment workflow file) are changed and pushed to `main`, the workflow runs automatically
+1. When changes are pushed to `main` (including `index.html` updates), the workflow runs automatically
 2. The workflow deploys repository contents from the root (`.`) to GitHub Pages
 3. The live page is refreshed with the latest `index.html` updates
 
