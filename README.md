@@ -16,8 +16,8 @@ This repository includes a GitHub Actions workflow at:
 Publishing behavior:
 
 1. When HTML files (or the deployment workflow file) are changed and pushed to `main`, the workflow runs automatically
-2. The workflow deploys the repository content to GitHub Pages
-3. The live page is refreshed with the latest HTML
+2. The workflow deploys repository contents from the root (`.`) to GitHub Pages
+3. The live page is refreshed with the latest `index.html` updates
 
 You can also run the workflow manually from the Actions tab using `workflow_dispatch`.
 
