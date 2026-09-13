@@ -1,11 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Requirements Traceability Matrix</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 0; padding: 2rem; background: Canvas; color: CanvasText; }
+    header, main { max-width: 150rem; margin: 0 auto; }
+    .meta, .filters { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+    .metric { border: 1px solid GrayText; border-radius: .5rem; padding: .75rem 1rem; }
+    button { padding: .5rem .75rem; cursor: pointer; }
+    table { border-collapse: collapse; width: 100%; font-size: .875rem; }
+    th, td { border: 1px solid GrayText; padding: .5rem; text-align: left; vertical-align: top; }
+    th { position: sticky; top: 0; background: Canvas; }
+    .table-wrap { overflow: auto; max-height: 70vh; }
+    .badge { display: inline-block; border: 1px solid currentColor; border-radius: 999px; padding: .1rem .5rem; white-space: nowrap; }
+    .complete { color: #18794e; }
+    .missing, .ambiguous, .inconsistent { color: #b42318; }
+    .unverified { color: #b54708; }
+    .not-yet-required { color: #475467; }
+    tr[hidden] { display: none; }
+    a { color: LinkText; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Requirements Traceability Matrix</h1>
+    <p>Generated 2026-09-13T08:11:43.114Z from <a href="https://github.com/YejiaTong/professional-website">YejiaTong/professional-website</a>
+      and <a href="https://github.com/users/YejiaTong/projects/2">Project #2</a> at commit <code>local</code>.
+      This is a derived view, not an authority.</p>
+    <div class="meta">
+      <span class="metric"><strong>6</strong> RTM rows</span>
+      <span class="metric"><strong>0</strong> current-gate findings</span>
+      <span class="metric"><strong>6</strong> Features</span>
+      <span class="metric"><strong>6</strong> Stories</span>
+    </div>
+    <p><a href="rtm.csv">Download CSV</a> | <a href="rtm.json">Download JSON</a></p>
+  </header>
+  <main>
+    <section aria-labelledby="matrix-title">
+      <h2 id="matrix-title">Traceability paths</h2>
+      <div class="filters" aria-label="Filter by coverage">
+        <button type="button" data-filter="all">All (6)</button><button type="button" data-filter="Complete">Complete (6)</button><button type="button" data-filter="Not yet required">Not yet required (0)</button><button type="button" data-filter="Unverified">Unverified (0)</button><button type="button" data-filter="Missing">Missing (0)</button><button type="button" data-filter="Inconsistent">Inconsistent (0)</button><button type="button" data-filter="Ambiguous">Ambiguous (0)</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Capability</th><th>Outcome</th><th>Feature</th><th>Business Requirement</th><th>Story</th><th>Acceptance Criterion</th><th>Specification / ADR</th><th>PR / Implementation</th><th>Test / Evidence</th><th>Lifecycle</th><th>Coverage</th></tr></thead>
+          <tbody>
+    <tr data-coverage="Complete">
+      <td>CAP-SOURCE-CAPTURE</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/6">#6 [Feature] Curators retain source provenance before knowledge is curated</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/6#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/7">#7 [Story] Curator can retain a source with its origin and author</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/7#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing static-site behaviour and introduces no new external interface.</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/1">#1 Wiki/2026 09 11 ingest and site update</a><br><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr>
+    <tr data-coverage="Complete">
+      <td>CAP-KNOWLEDGE-CURATION</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/8">#8 [Feature] Curators turn retained sources into connected knowledge</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/8#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/9">#9 [Story] Curator can publish an attributed, indexed, cross-referenced article</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/9#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing static-site behaviour and introduces no new external interface.</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/1">#1 Wiki/2026 09 11 ingest and site update</a><br><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr>
+    <tr data-coverage="Complete">
+      <td>CAP-IDENTITY-AUTHORING</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/10">#10 [Feature] Curators maintain an accurate professional record</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/10#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/11">#11 [Story] Curator can update profile content through data-managed surfaces</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/11#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing static-site behaviour and introduces no new external interface.</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/1">#1 Wiki/2026 09 11 ingest and site update</a><br><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr>
+    <tr data-coverage="Complete">
+      <td>CAP-PUBLICATION</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/12">#12 [Feature] The product publishes reproducible static content</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/12#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/13">#13 [Story] Curator can build vault content into generated public wiki output</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/13#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing static-site behaviour and introduces no new external interface.</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/1">#1 Wiki/2026 09 11 ingest and site update</a><br><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr>
+    <tr data-coverage="Complete">
+      <td>CAP-DISCOVERY</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/14">#14 [Feature] Readers discover relevant knowledge and professional context</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/14#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/15">#15 [Story] Reader can reach relevant content from a public entry point and follow a related path</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/15#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing static-site behaviour and introduces no new external interface.</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/1">#1 Wiki/2026 09 11 ingest and site update</a><br><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr>
+    <tr data-coverage="Complete">
+      <td>CAP-CONTENT-INTEGRITY</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/5">#5 [Outcome] Public professional presence is discoverable, current, and reproducible</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/16">#16 [Feature] The product detects content-integrity defects before publication</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/16#br-01">BR-01</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/17">#17 [Story] Curator can review reported structural and provenance defects</a></td>
+      <td><a href="https://github.com/YejiaTong/professional-website/issues/17#ac-01">AC-01</a></td>
+      <td>Not applicable: this records existing validation behaviour and introduces</td>
+      <td><a href="https://github.com/YejiaTong/professional-website/pull/2">#2 Establish the enduring product context and its ontology</a><br><a href="https://github.com/YejiaTong/professional-website/pull/4">#4 Finish retiring fanout and correct the vault-script allowlist paths</a></td>
+      <td>Not yet required</td>
+      <td>Implemented</td>
+      <td><span class="badge complete">Complete</span></td>
+    </tr></tbody>
+        </table>
+      </div>
+    </section>
+    <section aria-labelledby="findings-title">
+      <h2 id="findings-title">Findings</h2>
+      <ul><li>No findings at the evaluated lifecycle gates.</li></ul>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll("[data-filter]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        document.querySelectorAll("tbody tr").forEach((row) => {
+          row.hidden = filter !== "all" && row.dataset.coverage !== filter;
+        });
+      });
+    });
+  </script>
+</body>
 </html>
